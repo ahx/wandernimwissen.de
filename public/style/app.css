@@ -1,0 +1,96 @@
+@import "reset.css";
+html {  
+  background-color: #000;
+  color: white;
+  /* TODO use @font-face */
+  font-family: 'Blender-BOOK', 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  background-color: black;
+  background-image: url(126_960.jpg);
+  background-repeat: no-repeat;
+  background-position: right 70px;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+div#page {
+  width: 960px;
+  margin: 10px auto;  
+}
+div#head {
+  padding: 10px 10px;
+}
+h1#title {
+  font-size: 72px;
+  line-height: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+h2#subtitle {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+div#search {   
+  background-color: background-color: #333333;
+  background-color: rgba(051, 051, 051, 0.9);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6333333',EndColorStr='#e6333333'); /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6333333',EndColorStr='#e6333333')"; /* IE8  */    
+  padding: 10px;  
+}
+div#search form input[type=text] {
+  background-color: #555;  
+  border: 1px solid #FF8000;
+  width: 760px;
+  height: 30px;
+  font-size: 24px;
+  color: white;
+  padding: 1px 5px;
+}
+div#search .info {
+  margin-top: 5px;
+}
+#search-button {
+  color: #FF8000;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 5px;
+}
+
+div#main {
+  position: relative;
+  height: 454px;
+  background-color: rgba(022, 022, 022, 0.9);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616'); /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616')"; /* IE8  */
+}
+
+div#webcam {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+div#info {
+  padding: 10px;
+  width: 342px;
+}
+div#info p {
+  margin: 6px 0px;
+}
+div#footer {
+  background-color: #000000;
+  background-color: rgba(000, 000, 000, 0.9);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6000000',EndColorStr='#e6000000'); /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6000000',EndColorStr='#e6000000')"; /* IE8  */    
+  padding: 10px;
+  clear: both;
+}
+#webcam img {
+  background-color: #111;
+  border: 2px solid #333;
+}
+.orange {
+  color: #FF8000;
+}
