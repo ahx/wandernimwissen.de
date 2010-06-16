@@ -1,9 +1,17 @@
 @import "reset.css";
+
+@font-face {
+  font-family: 'BlendBOOK';
+  src: url('myfont.eot');  /* IE6+ */
+  src: local('☺'), 
+      url('myfont.woff') format('woff'),  /* FF3.6 */
+        url('BlendBOOK.ttf') format('truetype');  /* Saf3+,Chrome,Opera10+ */
+}
+
 html {  
   background-color: #000;
   color: white;
-  /* TODO use @font-face */
-  font-family: 'Blender-BOOK', 'Trebuchet MS', sans-serif;
+  font-family: 'BlendBOOK', 'Trebuchet MS', sans-serif;
   font-size: 16px;
   background-color: black;
   background-image: url(126_960.jpg);
