@@ -4,7 +4,7 @@ $(function() {
     var term = $('form#query input[name=term]').val();
     $("form#query .sent-info").hide();
     $.ajax({
-      type: 'POST',
+      type: 'GET',
       url: 'http://134.102.198.11:80/queries',
       data: { 'query': term },
       success: function(data) {
