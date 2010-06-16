@@ -22,8 +22,17 @@
   </div> 
    
   <div id="search">
-    <form id="query" action="http://134.102.198.11/queries" method="post">
-      <input type="text" name="query" />
+    <form id="query" action="http://suche3.suub.uni-bremen.de/cgi-bin/CiXbase/brewis/CiXbase_search" method="get">
+      <input name="term" type="text"> 
+        <input type="hidden" name="act" value="search"> 
+        <input type="hidden" name="LAN" value="DE"><input type="hidden" name="CLUSTER" value="simultanplus"> 
+        <input type="hidden" name="ORDER" value="ID"><input type="hidden" name="IHITS" value="30"> 
+        <input type="hidden" name="PRECISION"><input type="hidden" name="RELEVANCE" value="55"> 
+        <input type="hidden" name="FHITS" value="30"><input type="hidden" name="CID" id="CID"> 
+        <input type="hidden" id="style" name="XML_STYLE" value="/styles/short-DE.xml"> 
+        <input type="hidden" name="INDEXINFO" value="awCN"> 
+        <input type="hidden" id="index" name="index" value="L"><input type="hidden" name="n_dtyp" value="1L"> 
+        <input type="hidden" name="n_rtyp" value="ceEdX"><input type="hidden" id="mtyp" name="mtyp" value="">
       <span id="search-button">Suchen</span>
     </form>
   </div>
