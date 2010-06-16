@@ -4,9 +4,8 @@ $(function() {
     var term = $('form#query input[name=term]').val();
     $("form#query .sent-info").hide();
     $.ajax({
-      type: 'POST',
-      url: 'http://134.102.198.11:80/query',
-      data: { 'query': term },
+      type: 'GET',      
+      url: "http://suche3.suub.uni-bremen.de/cgi-bin/CiXbase/brewis/CiXbase_search?act=search&term="+term+"&LAN=DE&IHITS=30&FHITS=30&XML_STYLE=/styles/short-DE.xml&CID=750632&CLUSTER=simultanplus&index=w&n_dtyp=1L&n_rtyp=ceEdX&RELEVANCE=55&PRECISION=&QBITS=1000000",
       success: function(data) {
         $("form#query .sent-info").show('slow');
       }
