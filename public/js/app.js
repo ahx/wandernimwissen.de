@@ -1,14 +1,17 @@
 $(function() {
   $("form#query .sent-info").hide();
+  $("form#query .spinner").hide();
   $('form#query').bind('submit', function() {
     var term = $('form#query input[name=term]').val();
     $("form#query .sent-info").hide();
+    $("form#query .spinner").show();
     $.ajax({
       type: 'GET',
       url: 'http://134.102.198.11:80/queries',
       data: { 'query': term },
       success: function(data) {
         $("form#query .sent-info").show('slow');
+        $("form#query .spinner").hide();
       }
     });
     return false;
