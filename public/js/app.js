@@ -23,7 +23,7 @@ $(function() {
   
   $("a#suub-result").live('click', function() {
     var term = $('form#query input[name=term]').val();
-    url = "http://suche3.suub.uni-bremen.de/cgi-bin/CiXbase/brewis/CiXbase_search?act=search&term="+term+"&LAN=DE&IHITS=30&FHITS=30&XML_STYLE=/styles/short-DE.xml&CID=750632&CLUSTER=simultanplus&index=w&n_dtyp=1L&n_rtyp=ceEdX&RELEVANCE=55&PRECISION=&QBITS=1000000"
+    url = "http://suche3.suub.uni-bremen.de/cgi-bin/CiXbase/brewis/CiXbase_search?act=search&term="+term+"&LAN=DE&IHITS=30&FHITS=30&XML_STYLE=/styles/short-DE.xml&CLUSTER=simultanplus&index=w&n_dtyp=1L&n_rtyp=ceEdX&RELEVANCE=55&PRECISION=&QBITS=1000000"
     window.location = url
   });
 });
