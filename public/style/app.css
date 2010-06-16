@@ -10,9 +10,16 @@ html {
   background-repeat: no-repeat;
   background-position: right 70px;
 }
+a, a:visited {
+  color: #FF8000;
+}
 h1 {
   font-size: 24px;
   margin-bottom: 8px;
+}
+.sent-info {
+  margin-top: 4px;  
+  display: 0;
 }
 div#page {
   width: 960px;
@@ -56,6 +63,8 @@ div#search .info {
   margin-top: 5px;
 }
 div#search .submit-button {
+  position: relative;
+  top: -1px;
   color: #FF8000;
   cursor: pointer;
   font-size: 24px;
@@ -69,7 +78,9 @@ div#main {
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616'); /* IE6,IE7 */
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616')"; /* IE8  */
 }
-
+a#suub-result{
+  
+}
 div#webcam {
   position: absolute;
   right: 0px;
