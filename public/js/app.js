@@ -2,14 +2,13 @@ $(function() {
   $("form#query .sent-info").hide();
   $('form#query').bind('submit', function() {
     var term = $('form#query input[name=term]').val();
-    $("form#query").hide();
+    $("form#query .sent-info").hide();
     $.ajax({
       type: 'POST',
       url: 'http://134.102.198.11:80/query',
       data: { 'query': term },
       success: function(data) {
-        $("form#query").show('slow');
-        $("form#query .sent-info").show();
+        $("form#query .sent-info").show('slow');
       }
     });
     return false;
