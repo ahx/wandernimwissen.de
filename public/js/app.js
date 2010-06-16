@@ -5,7 +5,7 @@ $(function() {
     $("form#query .sent-info").hide();
     $.ajax({
       type: 'POST',
-      url: 'http://134.102.198.11:80/query',
+      url: 'http://134.102.198.11:80/queries',
       data: { 'query': term },
       success: function(data) {
         $("form#query .sent-info").show('slow');
