@@ -2,10 +2,8 @@
 
 @font-face {
   font-family: 'BlendBOOK';
-  src: url('myfont.eot');  /* IE6+ */
-  src: local('☺'), 
-      url('myfont.woff') format('woff'),  /* FF3.6 */
-        url('BlendBOOK.ttf') format('truetype');  /* Saf3+,Chrome,Opera10+ */
+  src: url('http://www.wandernimwissen.de/BlendBOOK.eot');
+  src: url('http://www.wandernimwissen.de/BlendBOOK.ttf') format('truetype');  /* Saf3+,Chrome,Opera10+ */
 }
 
 html {  
