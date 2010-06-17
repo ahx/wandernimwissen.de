@@ -1,16 +1,9 @@
 @import "reset.css";
-
-@font-face {
-  font-family: 'BlendBOOK';
-  src: url('http://www.wandernimwissen.de/BlendBOOK.eot');
-  src: url('http://www.wandernimwissen.de/BlendBOOK.ttf') format('truetype');  /* Saf3+,Chrome,Opera10+ */
-}
-
 html {  
   background-color: #000;
   color: white;
-  font-family: 'BlendBOOK', 'Trebuchet MS', sans-serif;
-  font-size: 16px;
+  font-family: 'BlendBOOK', 'Helvetica', sans-serif;
+  font-size: 15px;
   background-color: black;
   background-image: url(126_960.jpg);
   background-repeat: no-repeat;
