@@ -9,8 +9,8 @@ html {
   background-repeat: no-repeat;
   background-position: right 70px;
 }
-a, a:visited {
-  color: #FF8000;
+a, a:visited {  
+  color: white;
 }
 h1 {
   font-size: 24px;
@@ -86,7 +86,7 @@ div#main {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616')"; /* IE8  */
 }
 a#suub-result{
-  
+  color: #FF8000;
 }
 div#webcam {
   position: absolute;
