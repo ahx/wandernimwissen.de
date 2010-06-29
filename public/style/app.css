@@ -1,8 +1,8 @@
 @import "reset.css";
 html {  
+  color: white;  
+  font-family: 'Trebuchet MS',Verdana,Helvetica,Arial,sans-serif;
   background-color: #000;
-  color: white;
-  font-family: 'BlendBOOK', 'Helvetica', sans-serif;
   font-size: 15px;
   background-color: black;
   background-image: url(126_960.jpg);
