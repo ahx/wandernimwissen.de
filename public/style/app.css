@@ -3,8 +3,6 @@ html {
   color: white;  
   font-family: 'Trebuchet MS',Verdana,Helvetica,Arial,sans-serif;
   background-color: #000;
-  font-size: 15px;
-  background-color: black;
   background-image: url(126_960.jpg);
   background-repeat: no-repeat;
   background-position: right 70px;
@@ -13,7 +11,8 @@ a, a:visited {
   color: white;
 }
 h1 {
-  font-size: 24px;
+  font-size: 22px;
+  line-height: 23px; 
   margin-bottom: 8px;
 }
 .sent-info {
@@ -38,8 +37,8 @@ h1#title {
   margin-bottom: 5px;
 }
 h2#subtitle {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 div#search {   
@@ -54,7 +53,7 @@ div#search form input[type=text] {
   border: 1px solid #FF8000;
   width: 760px;
   height: 30px;
-  font-size: 24px;
+  font-size: 22px;
   color: white;
   padding: 1px 5px;
 }
@@ -74,28 +73,30 @@ div#search .submit-button {
   top: -1px;
   color: #FF8000;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 22px;
   padding: 5px;
 }
+div#search a#suub-result{
+  color: #FF8000;
+}
 
-div#main {
-  position: relative;
-  height: 454px;
+div#main {  
+  position: relative;  
+  min-height: 464px;
+  font-size: 15px;
+  line-height: 18px;
   background-color: rgba(022, 022, 022, 0.9);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616'); /* IE6,IE7 */
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616')"; /* IE8  */
 }
-a#suub-result{
-  color: #FF8000;
-}
 div#webcam {
   position: absolute;
-  right: 0px;
+  right: 1px;
   top: 10px;
 }
 div#info {
-  padding: 10px;
-  width: 342px;
+  padding: 10px 10px;
+  width: 352px;
 }
 div#info p {
   margin: 6px 0px;
