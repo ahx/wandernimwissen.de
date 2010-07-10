@@ -31,30 +31,30 @@
       <p class="orange">Mo-Fr 8 bis 22 Uhr | Sa 10 bis 18 Uhr</p>
     </h2>
   </div> 
-   
-  <div id="search">
-    <form id="query" action="http://suche3.suub.uni-bremen.de/cgi-bin/CiXbase/brewis/CiXbase_search" method="get">
-      <input name="term" type="text"> 
-        <input type="hidden" name="act" value="search"> 
-        <input type="hidden" name="LAN" value="DE"><input type="hidden" name="CLUSTER" value="simultanplus"> 
-        <input type="hidden" name="ORDER" value="ID"><input type="hidden" name="IHITS" value="30"> 
-        <input type="hidden" name="PRECISION"><input type="hidden" name="RELEVANCE" value="55"> 
-        <input type="hidden" name="FHITS" value="30"><input type="hidden" name="CID" id="CID"> 
-        <input type="hidden" id="style" name="XML_STYLE" value="/styles/short-DE.xml"> 
-        <input type="hidden" name="INDEXINFO" value="awCN"> 
-        <input type="hidden" id="index" name="index" value="L"><input type="hidden" name="n_dtyp" value="1L"> 
-        <input type="hidden" name="n_rtyp" value="ceEdX"><input type="hidden" id="mtyp" name="mtyp" value="">
-        <input type="submit" name="submit" value="Suchen" class="submit-button">
-        <!-- <span class="submit-button">Suchen</span> -->
-        <p class="spinner">&nbsp;</p>
-        <p class="sent-info">
-          Der Suchbegriff wurde auf die Installation geschickt. –
-          <a href="#" id="suub-result">Zum SuUB Suchergebnis...</a>
-        </p>
-    </form>
-  </div>
-    
+       
   <div id="main">  
+    <div id="search">
+      <form id="query" action="http://suche3.suub.uni-bremen.de/cgi-bin/CiXbase/brewis/CiXbase_search" method="get">
+        <input name="term" type="text"> 
+          <input type="hidden" name="act" value="search"> 
+          <input type="hidden" name="LAN" value="DE"><input type="hidden" name="CLUSTER" value="simultanplus"> 
+          <input type="hidden" name="ORDER" value="ID"><input type="hidden" name="IHITS" value="30"> 
+          <input type="hidden" name="PRECISION"><input type="hidden" name="RELEVANCE" value="55"> 
+          <input type="hidden" name="FHITS" value="30"><input type="hidden" name="CID" id="CID"> 
+          <input type="hidden" id="style" name="XML_STYLE" value="/styles/short-DE.xml"> 
+          <input type="hidden" name="INDEXINFO" value="awCN"> 
+          <input type="hidden" id="index" name="index" value="L"><input type="hidden" name="n_dtyp" value="1L"> 
+          <input type="hidden" name="n_rtyp" value="ceEdX"><input type="hidden" id="mtyp" name="mtyp" value="">
+          <input type="submit" name="submit" value="Suchen" class="submit-button">
+          <!-- <span class="submit-button">Suchen</span> -->
+          <p class="spinner">&nbsp;</p>
+          <p class="sent-info">
+            Der Suchbegriff wurde auf die Installation geschickt. –
+            <a href="#" id="suub-result">Zum SuUB Suchergebnis...</a>
+          </p>
+      </form>
+    </div>
+    
     <div id="webcam">
       <img src="http://134.102.198.11:36414/?action=stream" width="600" height="440" />
     </div>  

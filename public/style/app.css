@@ -32,7 +32,7 @@ div#page {
   margin: 20px auto;  
 }
 div#head {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   position: relative;
 }
 div#logos {
@@ -94,7 +94,7 @@ div#search a#suub-result{
 
 div#main {  
   position: relative;  
-  min-height: 454px;  
+  min-height: 510px;  /* FIXME stack properly  */
   line-height: 18px;
   background-color: rgba(022, 022, 022, 0.9);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616'); /* IE6,IE7 */
@@ -103,7 +103,7 @@ div#main {
 div#webcam {
   position: absolute;
   right: 1px;
-  top: 10px;
+  top: 64px;
 }
 div#info {
   padding: 10px 10px;
