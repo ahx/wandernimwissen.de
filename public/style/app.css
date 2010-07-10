@@ -52,6 +52,25 @@ h2#subtitle {
   font-size: 15px;
   line-height: 18px;
 }
+ul.nav li {
+  list-style-type: none;
+  display: inline;  
+}
+ul.nav a {
+  text-decoration: none;
+  display: inline-block;  
+  padding: 5px;
+}
+ul#menu {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  background-color: rgba(022, 022, 022, 0.9);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616'); /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616')"; /* IE8  */
+  border: 1px solid #999;
+}
+
 div#search {   
   background-color: background-color: #333333;
   background-color: rgba(051, 051, 051, 0.9);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
