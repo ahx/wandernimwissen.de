@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Wandern im Wissen - 350 Jahre SuUB</title>  
+  <link rel="icon" href="{Favicon}"/>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/>
+  <meta name="viewport" content="width=775"/> <!-- iPhone -->
+  <meta name="text:Disqus Shortname" content="" />
+  <!-- <link rel="stylesheet" href="style/app.css" type="text/css" media="screen" title="350 Jahre SuUB" charset="utf-8">   -->
+  <!-- <link rel="stylesheet" type="text/css" href="http://wandernimwissen.de/style/app.css" /> -->
+  <style type="text/css">
+  {CustomCSS}
+  </style>
+  {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+</head>
+<body class="blog">    
+  <div id="page">
+    <div id="head">  
+      <div id="logos">
+        <a href="http://www.suub.uni-bremen.de/350Jahre" title="350 Jahre SuUB" class="suub350">
+          <img src="http://www.wandernimwissen.de/images/Sub_Jub_Orange.png" width="164" height="64" alt="350 Jahre SuUB">
+        </a>
+        <a href="http://hfk-bremen.de/" title="Hochschule für Künste Bremen" class="hfk">
+          <img src="http://www.wandernimwissen.de/images/hfk-bremen.png" width="107" height="64" alt="Hochschule für Künste Bremen">
+        </a>
+      </div>    
+      <div id="title">
+        <img src="http://wandernimwissen.de/head.png" width="307" height="92" alt="Wandern im Wissen">
+        <h1>
+          Wandern im Wissen
+        </h1>
+      </div>
+      <h2 id="subtitle">
+        <span>350 Jahre Staats- und Universitätsbibliothek Bremen (SuUB)</span><br>
+        <span class="orange">Interaktive Medieninstallation der Hochschule für Künste Bremen</span><br>
+        <span>im Treppenhaus der SuUB vom 16.06.2010 bis 31.12.2010</span><br>
+        <span class="orange">Mo-Fr 8 bis 22 Uhr | Sa 10 bis 18 Uhr</span>
+      </h2>
+
+      <ul id="menu" class="nav">
+        <li><a href="http://www.wandernimwissen.de">Start</a></li>
+        <li><a href="http://blog.wandernimwissen.de" class="active">News</a></li>
+        {block:HasPages}
+            {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+            {block:AskEnabled}<li><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
+            {block:SubmissionsEnabled}<li><a href="/submit">{SubmitLabel}</a></li>{/block:SubmissionsEnabled}
+        {/block:HasPages}
+      </ul>
+    </div>
+    
+    <div id="main">
+      {block:SearchPage}
+      <div class="post searchpage">
+        <div class="datetime searchpage">
+          {SearchResultCount} result(s)
+        </div>
+        searched for <em>{SearchQuery}</em></h2>
+      </div>
+      {/block:SearchPage}
+      {block:Posts}
+      <div class="post">
+        <div class="datetime">
+          {block:Date}
+            <a href="{Permalink}">{Month} {DayOfMonth}, {Year}</a><br />
+            {block:IfDisqusShortname}
+              <a href="{Permalink}#disqus_thread"></a><br />
+            {block:IfDisqusShortname}
+          {/block:Date}
+        </div>
+        <div class="meta">
+          {block:Pagination}
+            <a href="{Permalink}">{NoteCountWithLabel}</a><br />
+          {/block:Pagination}
+          {block:SearchPage}
+            <a href="{Permalink}">{NoteCountWithLabel}</a><br />
+          {/block:SearchPage}
+          {block:PermalinkPage}
+            <a href="/">home</a><br />
+          {/block:PermalinkPage}
+          {block:RebloggedFrom}
+            reblogged from <a href="{ReblogParentURL}">{ReblogRootName}</a><br />
+          {/block:RebloggedFrom}
+        </div>
+      {block:Regular}
+        {block:Title}<h1 class="posttitle">{Title}</h1>{/block:Title}
+        <p style="regular_post_body">{Body}</p>
+      {/block:Regular}
+
+      {block:Photo}
+        <span class="photo">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" title="{PhotoAlt}">{LinkCloseTag}</span>
+        <p>{Caption}</p>
+      {/block:Photo}
+
+      {block:Quote}
+        <p><span class="{Length}_quote">“{Quote}”</span></p>
+        {block:Source}<p>&mdash;&nbsp;{Source}</p>{/block:Source}
+      {/block:Quote}
+
+      {block:Video}
+        {Video-500}
+        <p>{Caption}</p>
+      {/block:Video}
+
+      {block:Audio}
+        {AudioPlayerGrey}
+        <p>{Caption}</p>
+      {/block:Audio}
+
+      {block:Link}
+        <h2><a href="{URL}" {Target}>{Name}</a>&nbsp;&rarr;</h2>
+        {block:Description}<p>{Description}</p>{/block:Description}
+      {/block:Link}
+
+      {block:Conversation}
+        {block:Title}<h2>{Title}</h2>{/block:Title}
+        <p>
+        {block:Lines}
+        {block:Label}<strong>{Label}</strong>{/block:Label} {Line}<br />
+        {/block:Lines}
+        </p>
+      {/block:Conversation}
+      </div>
+      {/block:Posts}
+
+      {block:PermalinkPage}
+      {block:PostNotes}
+      <div class="post">
+        <h2>Notes</h2>
+        <p>{PostNotes}</p>
+      </div>
+      {/block:PostNotes}
+
+      {block:IfDisqusShortname}
+      <div class="post disqus">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+          <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+      </div>
+      {/block:IfDisqusShortname}
+      {/block:PermalinkPage}
+      
+      {block:Pagination}      
+        <div id="pagination">
+        {block:NextPage}
+        <div class="navleft">
+          &larr;&nbsp;<a href="{NextPage}">Früher</a>
+        </div>
+        {/block:NextPage}
+        {block:PreviousPage}
+        <div class="navright">
+          <a href="{PreviousPage}">Später</a>&nbsp;&rarr;
+        </div>
+        {/block:PreviousPage}
+        <div class="navcenter">
+          Seite <span>{CurrentPage}</span>
+        </div>
+      </div>
+      {/block:Pagination}
+  
+      {block:PermalinkPagination}
+        <div id="pagination">
+        {block:NextPost}
+        <div class="navleft">
+          &larr;&nbsp;<a href="{NextPost}">Vorheriger Beitrag</a>
+        </div>
+        {/block:NextPost}
+        {block:PreviousPost}
+        <div class="navright">
+          <a href="{PreviousPost}">Nächster Beitrag</a>&nbsp;&rarr;
+        </div>
+        {/block:PreviousPost}
+        </div>
+      {/block:PermalinkPagination}      
+    </div>
+    
+    <div id="blogfooter">
+      <form action="/search" method="get">
+        <a href="/">Home</a>&nbsp;&nbsp;<a href="/archive/">Archiv</a>&nbsp;&nbsp;<a href="/mobile">Mobile</a>&nbsp;&nbsp;<a href="{RSS}">RSS</a>&nbsp;&nbsp;<input type="text" name="q" value="{SearchQuery}"/>&nbsp;&nbsp;<input type="submit" value="Im Blog Suchen"/>
+      </form>
+    </div>
+  </div>
+  
+
+  {block:IfDisqusShortname}
+  <script type="text/javascript">
+  //<![CDATA[
+  (function() {
+      var links = document.getElementsByTagName('a');
+      var query = '?';
+      for(var i = 0; i < links.length; i++) {
+      if(links[i].href.indexOf('#disqus_thread') >= 0) {
+          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+      }
+      }
+      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
+  })();
+  //]]>
+  </script>
+  {/block:IfDisqusShortname}
+<!-- ENDE -->
+</body>
+</html>
