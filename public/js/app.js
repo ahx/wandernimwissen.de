@@ -1,5 +1,5 @@
 $(function() {
-  $("form#query .sent-info").hide();
+  // $("form#query .sent-info").hide();
   $("form#query .spinner").hide();
   $('form#query').bind('submit', function() {
     var term = $('form#query input[name=term]').val();

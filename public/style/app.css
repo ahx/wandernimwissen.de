@@ -1,10 +1,10 @@
-@import "reset.css";
+@import url("http://wandernimwissen.de/style/reset.css");
 html {  
-  color: white;  
+  color: white;
   font-family: 'Trebuchet MS',Verdana,Helvetica,Arial,sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   background-color: #000;
-  background-image: url(126_960.jpg);
+  background-image: url("http://wandernimwissen.de/style/126_960.jpg");
   background-repeat: no-repeat;
   background-position: right 82px;
 }
@@ -20,12 +20,22 @@ h2 {
   font-size: 18px;
   margin-bottom: 6px;
 }
+div#main h2 {
+  margin-top: 6px;
+}
+a img {
+  text-decoration: none;
+} 
+p {
+  margin: 6px 0 9px 0;
+}
 .clearfix {
   clear: both;
 }
 .sent-info {
   margin-top: 4px;  
-  display: 0;
+  margin-bottom: -5px;  
+  display: none;
 }
 div#page {
   width: 960px;
@@ -36,48 +46,58 @@ div#head {
   position: relative;
 }
 div#logos {
-  position: absolute;
-  top: 30px;
-  right: 0;
-  display: none;
+  background: #000;
 }
 div#logos .suub350 {
-  position: relative;
-  left: -14px;
+  margin-right: 14px;
   display: inline-block;
 }
 div#title h1{
   display: none;
 }
 h2#subtitle {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
 }
-ul.nav li {
-  list-style-type: none;
-  display: inline;  
-}
-ul.nav a {
+h2#subtitle a {
   text-decoration: none;
-  display: inline-block;  
-  padding: 5px 10px;
+  color: inherit;
+}
+h2#subtitle a:hover {
+  text-decoration: underline;
 }
 ul#menu {
   position: absolute;
-  right: 0;
-  top: -20px;
-  border-top: 0;  
+  right: 0px;
+  top: 0px;
+  border: 1px solid #333;
+  list-style-type: none;
+  list-style-image: none; 
+  margin: 0;
+  padding: 0;
+}
+ul#menu li {
+  display: inline;  
+  padding: 0;
+  margin: 0;
+}
+ul#menu a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 ul#menu li a.active, ul#menu li a:hover {  
   background-color: #333;
 }
+ul#menu li a:active {
+  background-color: #222;
+  outline: none;
+}
 
 div#search {   
-  background-color: background-color: #333333;
-  background-color: rgba(051, 051, 051, 0.9);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
-  filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6333333',EndColorStr='#e6333333'); /* IE6,IE7 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6333333',EndColorStr='#e6333333')"; /* IE8  */    
+  background-color: #333;   
   padding: 10px;  
+  margin-bottom: 10px;  
 }
 div#search form input[type=text] {
   background-color: #555;  
@@ -91,9 +111,11 @@ div#search form input[type=text] {
 div#search .spinner {
   height: 16px;
   width: 772px;
+  margin-bottom: -5px;
   background-image: url("pbar-ani.gif");
   position: relative;
   top: 0px;
+  display: none;
 }
 
 div#search .info {
@@ -101,39 +123,36 @@ div#search .info {
 }
 div#search .submit-button {
   position: relative;
+  left: 5px;
   height: 30px;
   background: none;
   border: none;
   color: #FF8000;
   cursor: pointer;
   font-size: 22px;
+  text-shadow: #603D19 0px 1px 0px;
 }
 div#search a#suub-result{
   color: #FF8000;
 }
 
+body.blog div#main {
+  width: 720px;
+}
 div#main {  
-/*  display: none;*/
-  position: relative;  
-  min-height: 510px;  /* FIXME stack properly  */
-  line-height: 18px;
+  line-height: 20px;
   background-color: rgba(022, 022, 022, 0.9);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616'); /* IE6,IE7 */
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616')"; /* IE8  */
 }
-div#webcam {
-  position: absolute;
-  right: 1px;
-  top: 64px;
-}
 div#info {
-  padding: 10px 10px;
-  width: 352px;
+  padding: 0px 10px;
+  padding-bottom: 5px;
 }
-div#info p {
-  margin: 6px 0px;
+div#webcam {
+  float: right;
 }
-div#footer {
+div#blogfooter {
   background-color: #000000;
   background-color: rgba(000, 000, 000, 0.9);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6000000',EndColorStr='#e6000000'); /* IE6,IE7 */
@@ -141,10 +160,70 @@ div#footer {
   padding: 10px;
   clear: both;
 }
+div#footer form input[type=text] {
+  background-color: #555;
+}
 #webcam img {
-  background-color: #111;
+  background-color: #333;
   border: 2px solid #333;
 }
 .orange {
   color: #FF8000;
 }
+
+
+.photo a, .disqus a { text-decoration: none !important; background: #fff !important; }
+.datetime, .meta { 
+  color: #999;
+  font-size: 12px; 
+  display: block;
+  margin-top: -6px;
+  }
+.meta {  
+  float: right;  
+  clear: both;
+  margin-top: -6px;
+  margin-right: -200px;
+}
+.datetime a {
+  text-decoration: none;
+}
+.datetime a:hover {
+  text-decoration: underline;
+}
+.datetime {
+  margin-bottom: 6px;
+}
+.datetime a, .meta a { color: #999; }
+
+.post {
+  display: block;  
+  background-color: #333; 
+  padding: 10px 210px 10px 10px;
+  margin-bottom: 20px; 
+  } 
+.short_quote,
+.medium_quote,
+.long_quote {   
+  font-size:22px; 
+  line-height: 130%; 
+  }
+a .notes { text-decoration: none !important; background: none; } 
+.notes a { text-decoration: none !important; background: none; } 
+img .notes { margin: 0px; padding: 3px; border: 1px solid #999; } 
+.notes img { margin: 0px; padding: 3px; border: 1px solid #999; } 
+/*.disqus { font-family: Georgia, 'Times New Roman', Times !important; size: 16px; line-height:150% !important; color:#333 !important; }*/
+.regular_post_body img {
+max-width: 100%;
+}
+
+div#pagination {
+  background-color: #333;
+  padding: 10px 5px;  
+  font-size: 12px;
+}
+.navleft { float: left; }
+.navright {  float: right; }
+.navcenter { text-align:center; width: 500px; }
+
+/* TODO validate! */
