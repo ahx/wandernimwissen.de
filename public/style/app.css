@@ -2,7 +2,7 @@
 html {  
   color: white;
   font-family: 'Trebuchet MS',Verdana,Helvetica,Arial,sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   background-color: #000;
   background-image: url("http://wandernimwissen.de/style/126_960.jpg");
   background-repeat: no-repeat;
@@ -26,11 +26,15 @@ div#main h2 {
 a img {
   text-decoration: none;
 } 
+p {
+  margin: 6px 0 9px 0;
+}
 .clearfix {
   clear: both;
 }
 .sent-info {
   margin-top: 4px;  
+  margin-bottom: -5px;  
   display: none;
 }
 div#page {
@@ -42,49 +46,59 @@ div#head {
   position: relative;
 }
 div#logos {
-  position: absolute;
-  top: 0px;
-  right: 160px;
-/*  display: none;*/
+  background: #000;
 }
 div#logos .suub350 {
-  position: relative;
-  left: -14px;
+  margin-right: 14px;
   display: inline-block;
 }
 div#title h1{
   display: none;
 }
 h2#subtitle {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
 }
-ul.nav li {
-  list-style-type: none;
-  display: inline-block;  
-}
-ul.nav a {
+h2#subtitle a {
   text-decoration: none;
-  display: inline-block;  
-  padding: 5px 10px;
+  color: inherit;
+}
+h2#subtitle a:hover {
+  text-decoration: underline;
 }
 ul#menu {
   position: absolute;
-  right: 0;
+  right: 0px;
   top: 0px;
-  margin-top: -20px;
-  border-top: 0;  
+  border: 1px solid #333;
+  list-style-type: none;
+  list-style-image: none; 
+  margin: 0;
+  padding: 0;
+}
+ul#menu li {
+  display: inline;  
+  padding: 0;
+  margin: 0;
+}
+ul#menu a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 ul#menu li a.active, ul#menu li a:hover {  
   background-color: #333;
   border-top: none;
 }
+ul#menu li a:active {
+  background-color: #222;
+  outline: none;
+}
 
 div#search {   
-  background-color: #333;  
+  background-color: #333;   
   padding: 10px;  
-  margin: -10px;
-  margin-bottom: 10px;
+  margin-bottom: 10px;  
 }
 div#search form input[type=text] {
   background-color: #555;  
@@ -98,9 +112,11 @@ div#search form input[type=text] {
 div#search .spinner {
   height: 16px;
   width: 772px;
+  margin-bottom: -5px;
   background-image: url("pbar-ani.gif");
   position: relative;
   top: 0px;
+  display: none;
 }
 
 div#search .info {
@@ -108,35 +124,34 @@ div#search .info {
 }
 div#search .submit-button {
   position: relative;
+  left: 5px;
   height: 30px;
   background: none;
   border: none;
   color: #FF8000;
   cursor: pointer;
   font-size: 22px;
+  text-shadow: #603D19 0px 1px 0px;
 }
 div#search a#suub-result{
   color: #FF8000;
 }
 
+body.blog div#main {
+  width: 720px;
+}
 div#main {  
-  padding: 10px 10px;
-  position: relative;  
-  line-height: 18px;
+  line-height: 20px;
   background-color: rgba(022, 022, 022, 0.9);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616'); /* IE6,IE7 */
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616')"; /* IE8  */
 }
+div#info {
+  padding: 0px 10px;
+  padding-bottom: 5px;
+}
 div#webcam {
-  margin-right: -10px;
   float: right;
-  clear: both;
-}
-div#info {  
-  width: 352px;
-}
-div#info p {
-  margin: 6px 0px;
 }
 div#blogfooter {
   background-color: #000000;
@@ -150,7 +165,7 @@ div#footer form input[type=text] {
   background-color: #555;
 }
 #webcam img {
-  background-color: #111;
+  background-color: #333;
   border: 2px solid #333;
 }
 .orange {
@@ -165,9 +180,11 @@ div#footer form input[type=text] {
   display: block;
   margin-top: -6px;
   }
-.meta {
-  float: right;
+.meta {  
+  float: right;  
   clear: both;
+  margin-top: -6px;
+  margin-right: -200px;
 }
 .datetime a {
   text-decoration: none;
@@ -182,9 +199,9 @@ div#footer form input[type=text] {
 
 .post {
   display: block;  
-  padding: 10px 40px;
-  background-color: #212121;
-  margin-bottom: 30px; 
+  background-color: #333; 
+  padding: 10px 210px 10px 10px;
+  margin-bottom: 20px; 
   } 
 .short_quote,
 .medium_quote,
@@ -202,8 +219,8 @@ max-width: 100%;
 }
 
 div#pagination {
-  padding: 10px 5px;
   background-color: #333;
+  padding: 10px 5px;  
   font-size: 12px;
 }
 .navleft { float: left; }
