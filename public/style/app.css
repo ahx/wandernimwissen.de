@@ -197,12 +197,13 @@ div#footer form input[type=text] {
 }
 .datetime a, .meta a { color: #999; }
 
+.section,
 .post {
   display: block;  
   background-color: #333; 
   padding: 10px 210px 10px 10px;
   margin-bottom: 20px; 
-  } 
+} 
 .short_quote,
 .medium_quote,
 .long_quote {   
