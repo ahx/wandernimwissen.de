@@ -64,7 +64,6 @@
             <a href="{Permalink}">{NoteCountWithLabel}</a><br />
           {/block:SearchPage}
           {block:PermalinkPage}
-            <a href="/">home</a><br />
           {/block:PermalinkPage}
           {block:RebloggedFrom}
             reblogged from <a href="{ReblogParentURL}">{ReblogRootName}</a><br />
@@ -131,42 +130,42 @@
       {block:Pagination}      
         <div id="pagination">
         {block:NextPage}
-        <div class="navleft">
+        <span class="navleft">
           &larr;&nbsp;<a href="{NextPage}">Früher</a>
-        </div>
+        </span>
         {/block:NextPage}
         {block:PreviousPage}
-        <div class="navright">
+        <span class="navright">
           <a href="{PreviousPage}">Später</a>&nbsp;&rarr;
-        </div>
+        </span>
         {/block:PreviousPage}
-        <div class="navcenter">
+        <span class="navcenter">
           Seite <span>{CurrentPage}</span>
-        </div>
+        </span>
       </div>
       {/block:Pagination}
   
       {block:PermalinkPagination}
         <div id="pagination">
         {block:NextPost}
-        <div class="navleft">
+        <span class="navleft">
           &larr;&nbsp;<a href="{NextPost}">Vorheriger Beitrag</a>
-        </div>
+        </span>
         {/block:NextPost}
         {block:PreviousPost}
-        <div class="navright">
+        <span class="navright">
           <a href="{PreviousPost}">Nächster Beitrag</a>&nbsp;&rarr;
-        </div>
+        </span>
         {/block:PreviousPost}
         </div>
       {/block:PermalinkPagination}      
     </div>
     
-    <div id="blogfooter">
+    <!-- <div id="blogfooter">
       <form action="/search" method="get">
         <a href="/">Home</a>&nbsp;&nbsp;<a href="/archive/">Archiv</a>&nbsp;&nbsp;<a href="/mobile">Mobile</a>&nbsp;&nbsp;<a href="{RSS}">RSS</a>&nbsp;&nbsp;<input type="text" name="q" value="{SearchQuery}"/>&nbsp;&nbsp;<input type="submit" value="Suchen"/>
       </form>
-    </div>
+    </div> -->
   </div>
   
 
