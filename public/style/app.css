@@ -157,6 +157,9 @@ div#info {
   padding-bottom: 5px;
 }
 div#webcam {
+  background-color: #333;
+  width: 600px;
+  height: 440px;
   float: right;
 }
 div#blogfooter {
@@ -171,7 +174,7 @@ div#footer form input[type=text] {
   background-color: #555;
 }
 #webcam img {
-  background-color: #333;
+  background-image: url("http://134.102.198.11:36414/?action=snapshot");  
   border: 2px solid #333;
 }
 .orange {
