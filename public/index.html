@@ -34,30 +34,10 @@
   </div> 
        
   <div id="main">  
-    <div id="search">
-      <form id="query" action="http://suche3.suub.uni-bremen.de/cgi-bin/CiXbase/brewis/CiXbase_search" method="get">
-        <input name="term" type="text"> 
-          <input type="hidden" name="act" value="search"> 
-          <input type="hidden" name="LAN" value="DE"><input type="hidden" name="CLUSTER" value="simultanplus"> 
-          <input type="hidden" name="ORDER" value="ID"><input type="hidden" name="IHITS" value="30"> 
-          <input type="hidden" name="PRECISION"><input type="hidden" name="RELEVANCE" value="55"> 
-          <input type="hidden" name="FHITS" value="30"><input type="hidden" name="CID" id="CID"> 
-          <input type="hidden" id="style" name="XML_STYLE" value="/styles/short-DE.xml"> 
-          <input type="hidden" name="INDEXINFO" value="awCN"> 
-          <input type="hidden" id="index" name="index" value="L"><input type="hidden" name="n_dtyp" value="1L"> 
-          <input type="hidden" name="n_rtyp" value="ceEdX"><input type="hidden" id="mtyp" name="mtyp" value="">
-          <input type="submit" name="submit" value="Suchen" class="submit-button">
-          <p class="spinner">&nbsp;</p>
-          <p class="sent-info">
-            Der Suchbegriff wurde auf die Installation geschickt. –
-            <a href="#" id="suub-result">Zum SuUB Suchergebnis...</a>
-          </p>
-      </form>
-    </div>
 
     <div id="info">
       <div id="webcam">
-        <img src="http://134.102.198.11:36414/?action=stream" width="600" height="440" />
+        <iframe src="http://player.vimeo.com/video/28266726?title=0&amp;byline=0&amp;portrait=0&amp;color=EC7425" width="601" height="338" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
       </div>
       
       <h1>Wandern im Wissen – Medieninstallation und Leitsystem</h1>
@@ -65,7 +45,7 @@
         In der <a href="http://www.suub.uni-bremen.de" target="_blank">Staats- und Universitätsbibliothek Bremen</a> wird täglich ein schier endloser Strom an Suchanfragen bearbeitet und beantwortet.  
       </p>
       <p>
-        Auf dieser Skulptur aus gefaltetem Papier werden die Suchbegriffe in Echtzeit in assoziative Bildwelten, Animationen, Textfragmente und Literaturhinweise übersetzt.  
+        Auf dieser Skulptur aus gefaltetem Papier wurden die Suchbegriffe in Echtzeit in assoziative Bildwelten, Animationen, Textfragmente und Literaturhinweise übersetzt.  
         Auch die Themenverteilung und Schwerpunkte der Suche werden sichtbar.         
       </p>
       <p>
@@ -84,10 +64,24 @@
     </div>
    
     <div id="footer">
-        <span class="title">Unterstützt von:</span>
-         <a href="http://www.eyevis.de" title="eyevis - PERFECT VISUAL SOLUTIONS" class="logo">
-           <img src="images/eyevis_Logo.png" width="145" height="35" alt="eyevis logo">
-         </a>
+      <div id="awards">
+        <h3>Awards:</h3>
+        <ul>
+          <li>
+            <a href="http://www.adc.de/fileadmin/user_upload/Downloads/Festival_2011/NWW2011_Endergebnis.pdf">ADC Junior Silber, 2011</a>
+          </li>
+          <li>
+            <a href="http://www.inputoutput.de/index.php?m=winners%20output%2014_1_8_2_42_">Output Award Distinction, 2011</a>
+          </li>
+          <li>
+            <a href="http://itva.de/itva_award.html">ITVA Award Bronze, 2010</a>
+          </li>
+        </ul>
+      </div>
+      <h3 class="sponsor-title">Unterstützt von:</h3>
+       <a href="http://www.eyevis.de" title="eyevis - PERFECT VISUAL SOLUTIONS" class="logo">
+         <img src="images/eyevis_Logo.png" width="145" height="35" alt="eyevis logo">
+       </a>
     </div>
   </div>  
   <script src="js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>

@@ -20,6 +20,7 @@ h2 {
   font-size: 18px;
   margin-bottom: 6px;
 }
+h3 
 div#main h2 {
   margin-top: 6px;
 }
@@ -164,7 +165,6 @@ div#webcam {
   width: 600px;
   height: 440px;
   margin-right: -6px;
-/*  margin-top: -10px;*/
   margin-left: 5px;
   float: right;
 }
@@ -173,15 +173,22 @@ div#webcam img {
   border: 1px solid #333;
 }
 div#footer {
-/*  margin-top: 10px;*/
   padding: 5px 10px 10px 10px;
   background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
   color: #666;
 }
-div#footer .title {
+div#footer .sponsor-title {
   display: block;
   margin-bottom: 5px;
 }
 div#footer .logo {
   margin: 0px 10px 0px 0px;
+}
+#awards {
+  margin-bottom: 10px;
+}
+#awards ul,
+#awards li {
+  display: inline;
 }
