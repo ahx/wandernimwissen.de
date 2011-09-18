@@ -164,7 +164,7 @@ div#webcam {
   background-color: #222;
   width: 600px;
   height: 440px;
-  margin-right: -6px;
+/*  margin-right: -6px;*/
   margin-left: 5px;
   float: right;
 }
