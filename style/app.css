@@ -1,33 +1,19 @@
-@import url("http://wandernimwissen.de/style/reset.css");
-html {  
+html {
   color: white;
   font-family: 'Trebuchet MS',Verdana,Helvetica,Arial,sans-serif;
   font-size: 14px;
   background-color: #000;
-  background-image: url("http://wandernimwissen.de/style/126_960.jpg");
+  background-image: url("126_960.jpg");
   background-repeat: no-repeat;
   background-position: right 82px;
 }
-a, a:visited {  
+a, a:visited {
   color: white;
-}
-h1 {
-  font-size: 22px;
-  line-height: 23px; 
-  margin-bottom: 8px;
-}
-h2 {
-  font-size: 18px;
-  margin-bottom: 6px;
-}
-h3 
-div#main h2 {
-  margin-top: 6px;
 }
 a img {
   border: 0;
   text-decoration: none;
-} 
+}
 p {
   margin: 6px 0 12px 0;
 }
@@ -45,29 +31,32 @@ blockquote {
   display: block;
 }
 
-div#page {
-  width: 960px;
-  margin: 20px auto 0px auto;  
+.inline {
+  display: inline;
 }
 
-div#head {
+#page {
+  width: 960px;
+  margin: 30px auto 0px auto;
+}
+
+#head {
   padding-bottom: 5px;
   position: relative;
 }
 
-div#title h1 {
+#title h1 {
   display: none;
 }
 
-h2#subtitle {
-  font-size: 14px;
-  line-height: 18px;
+#subtitle {
+  font-size: 1em;
 }
-h2#subtitle a {
+#subtitle a {
   text-decoration: none;
   color: inherit;
 }
-h2#subtitle a:hover {
+#subtitle a:hover {
   text-decoration: underline;
 }
 
@@ -77,12 +66,12 @@ ul#menu {
   top: 0px;
   border: 1px solid #333;
   list-style-type: none;
-  list-style-image: none; 
+  list-style-image: none;
   margin: 0;
   padding: 0;
 }
 ul#menu li {
-  display: inline;  
+  display: inline;
   padding: 0;
   margin: 0;
 }
@@ -91,7 +80,7 @@ ul#menu a {
   text-decoration: none;
   padding: 5px 10px;
 }
-ul#menu li a.active, ul#menu li a:hover {  
+ul#menu li a.active, ul#menu li a:hover {
   background-color: #333;
   border-top: none;
 }
@@ -100,10 +89,10 @@ ul#menu li a:active {
   outline: none;
 }
 
-div#search {   
-  background-color: #333;   
-  padding: 10px;  
-  margin-bottom: 5px;  
+div#search {
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 div#search .spinner {
   height: 16px;
@@ -118,7 +107,7 @@ div#search .info {
   margin-top: 5px;
 }
 div#search form input[type=text] {
-  background-color: #555;  
+  background-color: #555;
   border: 1px solid #FF8000;
   width: 760px;
   height: 30px;
@@ -138,22 +127,22 @@ div#search form .submit-button {
   text-shadow: #603D19 0px 1px 0px;
 }
 div#search form .sent-info {
-  margin-top: 4px;  
-  margin-bottom: -5px;  
+  margin-top: 4px;
+  margin-bottom: -5px;
   display: none;
 }
 div#search form .sent-info a#suub-result{
   color: #FF8000;
 }
 
-div#main {  
+div#main {
   line-height: 20px;
   background-color: rgba(022, 022, 022, 0.9);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616'); /* IE6,IE7 */
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6161616',EndColorStr='#e6161616')"; /* IE8  */
 }
 div#info {
-  padding: 10px 10px 5px 10px;
+  padding: 10px;
   background-color: #222;
 }
 div#info .suub350 {
@@ -161,15 +150,14 @@ div#info .suub350 {
   display: inline-block;
 }
 div#webcam {
-  background-color: #222;
-  width: 600px;
-  height: 440px;
+  /*width: 600px;*/
+  /*height: 440px;*/
 /*  margin-right: -6px;*/
-  margin-left: 5px;
+  margin-left: 1em;
   float: right;
 }
 div#webcam img {
-  background-image: url("http://134.102.198.11:36414/?action=snapshot");  
+  background-image: url("http://134.102.198.11:36414/?action=snapshot");
   border: 1px solid #333;
 }
 div#footer {
@@ -188,7 +176,11 @@ div#footer .logo {
 #awards {
   margin-bottom: 10px;
 }
-#awards ul,
+#awards ul {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
 #awards li {
   display: inline;
 }
